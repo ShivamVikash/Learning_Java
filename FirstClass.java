@@ -17,5 +17,8 @@ class FirstClass
       System.out.println(name);
       System.out.println(age);
       System.out.println(price);
+      
+      // Input from user
+      // practice questions
    }
 }
