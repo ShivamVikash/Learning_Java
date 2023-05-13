@@ -65,11 +65,13 @@ class FirstClass
       System.out.println(t9);
       System.out.println(t10);
 
-      /*for(int i=1;i<=10;i++)
+      /*Efficient using loop
+      for(int i=1;i<=10;i++)
       {
          int t = n*i;
          System.out.println(t);
-      }*/
+      }
+      */
       
       //Conditional Statements: If Else
       //Number input by user is even or odd
@@ -106,6 +108,62 @@ class FirstClass
          case 3: System.out.println("Bonjour");
          break;
          default: System.out.println("Invalid Button");
+      }
+      
+      //Homework questions
+      //make a calculator by taking two no.s from user
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the first no.");
+      int n1 = sc.nextInt();
+      System.out.println("Enter the second no.");
+      int n2 =sc.nextInt();
+      System.out.println("Enter the operation case");
+      int operation = sc.nextInt();
+      switch(operation)
+      {  
+         case 1: System.out.println(n1+n2);
+         break;
+         case 2:System.out.println(n1-n2);
+         break;
+         case 3:System.out.println(n1*n2);
+         break;
+         case 4:System.out.println(n1/n2);
+         break;
+         case 5:System.out.println(n1%n2);
+         break;
+         default:System.out.println("Invalid operation case");
+      }
+      //Display the corresponding month of the no. input by the user
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the month no.");
+      int m = sc.nextInt();
+      switch(m)
+      {  
+         case 1: System.out.println("january");
+         break;
+         case 2:System.out.println("February");
+         break;
+         case 3:System.out.println("march");
+         break;
+         case 4:System.out.println("april");
+         break;
+         case 5:System.out.println("may");
+         break;
+         case 6:System.out.println("june");
+         break;
+         case 7:System.out.println("july");
+         break;
+         case 8:System.out.println("august");
+         break;
+         case 9:System.out.println("september");
+         break;
+         case 10:System.out.println("october");
+         break;
+         case 11:System.out.println("november");
+         break;
+         case 12:System.out.println("december");
+         break;
+         default:System.out.println("Invalid month number");
       }
    }
 }
