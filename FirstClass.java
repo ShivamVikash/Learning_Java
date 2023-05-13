@@ -70,5 +70,42 @@ class FirstClass
          int t = n*i;
          System.out.println(t);
       }*/
+      
+      //Conditional Statements: If Else
+      //Number input by user is even or odd
+      Scanner sc= new Scanner(System.in);
+      int n =  sc.nextInt();
+      if(n%2==0){
+         System.out.println("Even");
+      }
+      else{
+         System.out.println("Odd");
+      }
+
+      //Else-If : User input two numbers, if they are equal, greater or lesser
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      if(a==b){
+         System.out.println("Equal");
+      } 
+      else if(a>b){
+         System.out.println("a is greater");
+      }
+      else{
+         System.out.println("a is lesser");
+      }
+
+      //Switch-Break Statements
+      int button =  sc.nextInt();
+      switch(button)
+      {
+         case 1: System.out.println("Hello");
+         break;
+         case 2: System.out.println("Namaste");
+         break;
+         case 3: System.out.println("Bonjour");
+         break;
+         default: System.out.println("Invalid Button");
+      }
    }
 }
