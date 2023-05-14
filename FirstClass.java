@@ -193,5 +193,14 @@ class FirstClass
       }
       System.out.print("Sum is : ");
       System.out.println(s);
+      
+      //Print all even no.s till n
+      System.out.println("Enter the limit for which no.s need to be printed");
+      int n = sc.nextInt();
+      for(int i=0;i<=n;i++){
+         if(i%2==0){
+            System.out.println(i);
+         }
+      }
    }
 }
