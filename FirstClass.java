@@ -165,5 +165,33 @@ class FirstClass
          break;
          default:System.out.println("Invalid month number");
       }
+      //Learning loops
+      int i;
+      for(i = 0; i<11; i++){
+         System.out.print(i);
+      }
+      System.out.println("");
+      i=0;
+      while(i<11){
+         System.out.println(i);
+         i++;
+      }
+      i=0;
+      do{
+         System.out.print(i);
+         i++;
+      }while(i<11);
+      
+      //Q: Sum of first n natural no.s
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the limit for which the sum is to be calculated");
+      int n = sc.nextInt();
+      int s=0;
+      for(int i=1; i<=n ; i++)
+      {
+          s=s+i;
+      }
+      System.out.print("Sum is : ");
+      System.out.println(s);
    }
 }
