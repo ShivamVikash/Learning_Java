@@ -204,24 +204,28 @@ class FirstClass
       }
       
       //Creating a menu driven class
+      int x;
       Scanner sc = new Scanner(System.in);
-      System.out.println("Please enter your choice out of 0 or 1");
-      int c = sc.nextInt();
-      if(c==1){
-         System.out.println("Enter students marks");
-         int marks=sc.nextInt();
-         if(marks>=90){
-            System.out.println("This is Good");
-         }
-         else if(marks>=60 && marks<=89){
-            System.out.println("This is also Good");
+      do{
+         System.out.println("Please enter your choice out of 0 or 1");
+         int c = sc.nextInt();
+         x=c;
+         if(c==1){
+            System.out.println("Enter students marks");
+            int marks=sc.nextInt();
+            if(marks>=90){
+               System.out.println("This is Good");
+            }
+            else if(marks>=60 && marks<=89){
+               System.out.println("This is also Good");
+            }
+            else{
+                System.out.println("This is Good as Well");
+            }  
          }
          else{
-             System.out.println("This is Good as Well");
-         }  
-      }
-      else{
-         System.out.println("Stopped");
-      }
+            System.out.println("Stopped");
+         }
+      }while(x==1);
    }
 }
