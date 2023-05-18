@@ -297,5 +297,37 @@ class FirstClass
          }
          System.out.println();
       }  
+      
+      // 6. Half Pyramid with numbers
+      for(int i= 1; i<=r; i++){
+         for(int j=1; j<=i; j++){
+            System.out.print(j+" ");
+         }
+         System.out.println();
+      }
+      
+      //7. Inverted Half Pyramid with numbers
+      for(int i=r; i>=1; i--){
+         for(int j=1; j<=i;j++){
+            System.out.print(j+" ");
+         }
+         System.out.println();
+      }
+      
+      // Alternate method 1
+      for(int i=1; i<=r; i++){
+         for(int j=1; j<=(r-i+1); j++){
+            System.out.print(j+" ");
+         }
+         System.out.println();
+      }
+      
+      //Alternate method 2
+      for(int i=0; i<r; i++){
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(j+" ");
+         }
+         System.out.println();
+      }
    }
 }
