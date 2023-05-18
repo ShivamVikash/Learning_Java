@@ -65,13 +65,13 @@ class FirstClass
       System.out.println(t9);
       System.out.println(t10);
 
-      /*Efficient using loop
+      //Efficient using loop
       for(int i=1;i<=10;i++)
       {
          int t = n*i;
          System.out.println(t);
       }
-      */
+      
       
       //Conditional Statements: If Else
       //Number input by user is even or odd
@@ -227,5 +227,75 @@ class FirstClass
             System.out.println("Stopped");
          }
       }while(x==1);
+      
+      //Program to display whether a no. is prime no. or not
+      int c;int i=1;
+      Scanner sc= new Scanner (System.in);
+      System.out.println("No. of times you want to check prime or not");
+      int k=sc.nextInt();
+      while(i<=k){
+         c=0;
+         System.out.println("Enter the no.");
+         int n= sc.nextInt();
+         for(int j=1;j<=n;j++){
+            if((n%j)==0){
+              c++;
+            }
+         }
+         if(c==2){
+           System.out.println("Prime no.");
+         }   
+         else{
+           System.out.println("Non-Prime no.");
+         }
+         i++;
+      }
+      
+      // Pattern Questions: 1. Solid Rectangle
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no. of rows");
+      int r = sc.nextInt();
+      //System.out.println("Enter the no. of coulums");
+      //int c = sc.nextInt();
+      for(int i=1; i<=r;i++){
+         for(int j = 1; j<=c; j++){
+           System.out.print("*");
+         }
+         System.out.println();
+      }
+      
+      //2. Hollow Rectangle
+      for(int i=1;i<=r;i++){
+         for(int j=1;j<=c;j++){
+            if(i==1 || j==1 || i==r || j == c){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }
+         }
+         System.out.println();
+      }
+      
+      //3,4. Half Pyramid and inverted half pyramid
+      
+      //for(int i = 1; i<=r; i++){
+      for(int i=r; i>=1; i--){
+         for(int j=1; j<=i; j++){
+            System.out.print("*");
+         }
+         System.out.println();
+      } 
+      
+      //5. Rotated half pyramid by 180 degrees
+      for(int i=1;i<=r;i++){
+         for(int j=1;j<=(r-i);j++){
+            System.out.print(" ");
+         }
+         for(int k= 1; k<=i; k++){
+            System.out.print("*");
+         }
+         System.out.println();
+      }  
    }
 }
