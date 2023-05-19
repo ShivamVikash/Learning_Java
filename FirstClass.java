@@ -329,5 +329,28 @@ class FirstClass
          }
          System.out.println();
       }
+      
+      //8. Floyd's Triangle
+      int n=1;
+      for(int i=1; i<=r; i++){
+         for(int j =1; j<=i;j++){
+            System.out.print(n+" ");
+            n++;
+         }
+         System.out.println();
+      }
+      
+      //9. 0-1 Triangle
+      for(int i=1; i<=r; i++){
+         for(int j=1; j<=i; j++){
+            if((i+j)%2==0){
+               System.out.print(1+" ");
+            }
+            else{
+               System.out.print(0+" ");
+            }
+         }
+         System.out.println();
+      }
    }
 }
