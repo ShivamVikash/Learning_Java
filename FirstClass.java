@@ -373,5 +373,60 @@ class FirstClass
          }
          System.out.println();
       }
+      
+      // Homework Questions: Lecture 5
+      // 1. Solid rhombus
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no of rows of rhombus");
+      int r = sc.nextInt();
+      System.out.println("Enter the breath of rhombus");
+      int c = sc.nextInt();
+      for(int i =1; i<=r; i++){
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int k=1; k<=c; k++){
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      
+      //2. Number pyramid
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no of rows of pyramid");
+      int r = sc.nextInt();
+      int n=1;
+      for(int i =1; i<=r; i++){
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int k=1; k<=i; k++){
+            System.out.print(n+" ");
+         }
+         n++;
+         System.out.println();
+      }
+      
+      //3. palindrome pyramid
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no of rows of pyramid");
+      int r = sc.nextInt();
+      int n;
+      for(int i =1; i<=r; i++){
+         n=i;
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int k=1; k<=i; k++){
+            System.out.print(n);
+            n=n-1;
+         }
+         n+=2;
+         for(int l=2; l<=i; l++){
+            System.out.print(n);
+            n++;
+         }
+         System.out.println();
+      }
    }
 }
