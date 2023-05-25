@@ -165,6 +165,7 @@ class FirstClass
          break;
          default:System.out.println("Invalid month number");
       }
+      
       //Learning loops
       int i;
       for(i = 0; i<11; i++){
