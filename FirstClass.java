@@ -498,8 +498,7 @@ class FirstClass
          System.out.println();
       }
    
-       //Homework problem: Advance pattern questions
-
+      //Homework problem: Advance pattern questions
       //1. Hollow Butterfly pattern
       Scanner sc = new Scanner(System.in);
       int r = sc.nextInt();
