@@ -428,5 +428,177 @@ class FirstClass
          }
          System.out.println();
       }
+      // Alternate method: Palindrome pyramid
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no of rows of pyramid");
+      int r = sc.nextInt();
+      for(int i =1; i<=r; i++){
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j= i; j>=1; j--){
+            System.out.print(j);
+         }
+         for(int j =2; j<=i; j++){
+            System.out.print(j);
+         }
+         System.out.println();
+      }
+      
+      //Advanced pattern questions
+      // 10. Butterfly pattern
+      Scanner sc = new Scanner(System.in);
+      int r = sc.nextInt();
+      for(int i =1; i<=r; i++){
+         for(int j =1; j<=i; j++){
+            System.out.print("*");
+         }
+         for(int j =1; j<=2*(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j =1; j<=i; j++){
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      for(int i =r; i>=1; i--){
+         for(int j =1; j<=i; j++){
+            System.out.print("*");
+         }
+         for(int j =1; j<=2*(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j =1; j<=i; j++){
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      
+      //14. Diamond pattern
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the no of rows of pyramid");
+      int r = sc.nextInt();
+      for(int i =1; i<=r; i++){
+         for(int j=1; j<=(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j=1; j<=(2*i-1); j++){
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      for(int i=r; i>=1; i--){
+            for(int j=1;j<=r-i; j++){
+               System.out.print(" ");
+            }
+            for(int j= 1; j<=(2*i-1); j++){
+               System.out.print("*");
+            }
+         System.out.println();
+      }
+   
+       //Homework problem: Advance pattern questions
+
+      //1. Hollow Butterfly pattern
+      Scanner sc = new Scanner(System.in);
+      int r = sc.nextInt();
+      for(int i =1; i<=r; i++){
+         for(int j =1; j<=i; j++){
+            if(j==1 || j==i){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }
+         }
+         for(int j =1; j<=2*(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j =1; j<=i; j++){
+            if(j==1 || j==i){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }  
+         }
+         System.out.println();
+      }
+      for(int i =r; i>=1; i--){
+         for(int j =1; j<=i; j++){
+            if(j==1 || j==i){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }
+         }
+         for(int j =1; j<=2*(r-i); j++){
+            System.out.print(" ");
+         }
+         for(int j =1; j<=i; j++){
+            if(j==1 || j==i){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }
+         }
+         System.out.println();
+      }
+      
+       //2. Hollow Rhombus
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Enter the no. of rows");
+       int r= sc.nextInt();
+       for(int i =1; i<=r; i++){
+         for(int j=1; j<=r-i; j++){
+            System.out.print(" ");
+         }
+         for(int j=1; j<=r; j++){
+            if(i==1 || j==1 || i==r || j==r){
+               System.out.print("*");
+            }
+            else{
+               System.out.print(" ");
+            }
+         }
+         System.out.println();
+       }
+       
+       //3. Pascal's Triangle
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Enter the no. of rows");
+       int r= sc.nextInt();
+       int n=11;
+       int m=1;
+       for(int i = 1; i<=r; i++){
+        System.out.println(m);
+        m=m*n;
+      }
+      
+       //4. Half number pyramid
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Enter the no. of rows");
+       int r= sc.nextInt();
+       for(int i = 1; i<=r; i++){
+          for(int j =1; j<=i; j++){
+             System.out.print(j);
+          }
+          System.out.println();
+      }
+
+      //5. Inverted Half pyramid
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Enter the no. of rows");
+       int r= sc.nextInt();
+       int n=1;
+       for(int i = r; i>=1; i--){
+          for(int j =1; j<=i; j++){
+             System.out.print(n);
+          }
+          n++;
+          System.out.println();
+      }
    }
 }
