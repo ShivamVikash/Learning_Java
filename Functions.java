@@ -2,7 +2,7 @@ import java.util.*;
 
 import javax.sound.sampled.SourceDataLine;
 public class Functions{
-    /* 
+    
     //1. Print my name
     public static void printMyName( String name){
         System.out.println("My name is:" + name);
@@ -108,7 +108,7 @@ public class Functions{
         int n= sc.nextInt(); 
         checkEven(n);
     }
-    */
+    
     //3. Print table of a given number
     public static void printTable( int n){
         int t=1;
