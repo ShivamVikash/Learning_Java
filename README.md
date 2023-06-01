@@ -3,4 +3,4 @@ Started learning Java as a Programming Language. So will be posting the question
 
 Currently, I am going through the basics. Introduction to java, input/output, variables, datatypes. Further moving on to the conditional statements, then to loops. And now solving some parttern questions.
 Now, I am goping to learn about functions and methods.
-After successfully completing the basics now I am getting into some exercises..
+After successfully completing the basics now I am getting into some exercises...
