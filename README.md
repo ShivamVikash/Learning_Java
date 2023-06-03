@@ -5,4 +5,4 @@ Currently, I am going through the basics. Introduction to java, input/output, va
 Now, I am goping to learn about functions and methods.
 After successfully completing the basics now I am getting into some exercises..
 
-Then, stepping into a new module of time complexity....
+Then, stepping into a new module of time complexity..
