@@ -124,4 +124,68 @@ public class Functions{
         int n= sc.nextInt(); 
         printTable(n);
     }
+    
+    //JAVA EXERCISE 1
+    //1. Input 3 no.'s from user and make a function to print average
+    public static double printAverage(double a, double b, double c){             //public static void printAverage(double a, double b, double c){
+        double avg=(a+b+c)/3.0;
+        return avg;                                                             //System.out.println("Average of the numbers are: " + avg); 
+    }                                                                           //return;
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter first number");
+        double a = sc.nextDouble();
+        System.out.println("Enter second number");
+        double b = sc.nextDouble();
+        System.out.println("Enter third number");
+        double c = sc.nextDouble();
+        double avg= printAverage(a,b,c);                                       //printAverage(a,b,c);
+        System.out.println("Average of the numbers are: " + avg);
+    }
+     
+    //2. Function to print sum of all odd no.'s from 1 to n
+    public static void sumOdd(int n){
+        int sum=0;
+        for(int i=1; i<=n; i++){
+            if(i%2==1){
+               sum=sum+i;
+            }
+        }
+        System.out.println("Sum of odd number are: "+ sum);
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the value of n");
+        int n= sc.nextInt();
+        sumOdd(n);
+    }
+    
+    //3. Function which takes two numbers and returns greatest of the two
+    public static int returnGreatest(int n1, int n2){
+        int g=0;
+        if(n1>n2){
+            g=n1;
+            System.out.println(g+" is the greatest");
+        }
+        else if(n2>n1){
+            g=n2;
+            System.out.println(g+" is the greatest");
+        }
+        else{
+            g=n1;
+            System.out.println("Both are equal");
+            
+        }
+        return g;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the value of n1");
+        int n1= sc.nextInt();
+        System.out.println("Enter the value of n2");
+        int n2= sc.nextInt();
+        int g = returnGreatest(n1,n2);
+        System.out.println(g+" is greater");
+        
+    }
 }
