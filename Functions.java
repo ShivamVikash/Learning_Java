@@ -328,6 +328,7 @@ public class Functions{
             v2=s;
         }
     } 
+    
     //ARRAYS
     //Lecture 10: 1. Take an array of names as input from the user and print them on the screen
     public static void main(String args[]){
