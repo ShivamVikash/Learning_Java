@@ -328,6 +328,139 @@ public class Functions{
             v2=s;
         }
     } 
+    //ARRAYS
+    //Lecture 10: 1. Take an array of names as input from the user and print them on the screen
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the array size");
+        int n=sc.nextInt();
+        String names[] = new String[n];
+        for(int i=0;i<n;i++){
+            System.out.println("Enter name "+ (i+1));
+            names[i]=sc.next();
+        } 
+        System.out.println("Nmaes are:");
+        for(int i=0;i<n;i++){
+           System.out.println(names[i]) ; 
+        }
+    }
+     
+    //3. Take an array of numbers as input and check if it is an array sorted in ascending order
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        boolean isAsc= true;
+        //Array creation
+        System.out.println("Enter the array size");
+        int n=sc.nextInt();
+        int arrayNo[] = new int[n];
+        //Inputting values in the array
+        for(int i=0;i<n;i++){
+            System.out.println("Enter number at index "+ i);
+            arrayNo[i]=sc.nextInt();
+        } 
+        //Displaying array
+        System.out.print("Input array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(arrayNo[i]+" ");
+        }
+        System.out.println();
+        /* 
+        //Checking ascending order
+        int i=0;
+         while(i<n-1){
+            if(arrayNo[i]<arrayNo[i+1]){
+                i++;
+            }
+            else{
+                System.out.println("Array is not in ascending order");
+                isAsc= false;
+                break;
+            }
+        }
+        if(isAsc== true){
+            System.out.println("Array is in ascending order");
+        }
+        
+        //Alternate method
+         
+        int j=0;
+        for(int i=0; i<n-1; i++){
+            j=i;
+            while(j<n-1){
+                if(arrayNo[i]< arrayNo[j+1]){
+                  j++;
+                }
+                else{
+                    System.out.println("Array is not in ascending order");
+                    break;
+                }
+            }
+            break;
+        }  
+    }
     
+    //2. Find the maximum & minimum number in an array of integers.
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the array size");
+        int n=sc.nextInt();
+        int arrayNo[] = new int[n];
+        for(int i=0;i<n;i++){
+            System.out.println("Enter the no. at index "+ i);
+            arrayNo[i]=sc.nextInt();
+        }  
+        //Displaying array
+        System.out.print("Input array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(arrayNo[i]+" ");
+        }
+        System.out.println();
+        //Finding greatest and smallest no.'s
+        int max=arrayNo[0];
+        int min=arrayNo[0];
+        for(int i=0;i<n;i++){
+            if(arrayNo[i]<min){
+                min=arrayNo[i];
+            }
+            if(arrayNo[i]>max){
+                max=arrayNo[i];
+            }
+        }
+        System.out.println("Greatest no. in the array: "+max);
+        System.out.println("Smallest no. in the array: "+min);
+    }
+    
+    //Alternate method
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the array size");
+        int n=sc.nextInt();
+        int arrayNo[] = new int[n];
+        for(int i=0;i<n;i++){
+            System.out.println("Enter the no. at index "+ i);
+            arrayNo[i]=sc.nextInt();
+        }  
+        //Displaying array
+        System.out.print("Input array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(arrayNo[i]+" ");
+        }
+        System.out.println();
+        //Integer.MAX_VALUE is a constant in the Integer class of java.lang package that stores maximum possible value for any integer variable, the value= 2^31-1 = 2147483647
+        //Integer.MIN_VALUE is a constant in the Integer class of java.lang package that stores minimum possible value for any integer variable, the value= -2^31 = -2147483648
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE; 
+        for(int i=0;i<n;i++){
+            if(arrayNo[i]<min){
+                min=arrayNo[i];
+            }
+            if(arrayNo[i]>max){
+                max=arrayNo[i];
+            }
+        }
+        System.out.println("Greatest no. in the array: "+max);
+        System.out.println("Smallest no. in the array: "+min);
+    }
+    */
 }
 
