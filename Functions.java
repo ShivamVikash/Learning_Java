@@ -365,7 +365,6 @@ public class Functions{
             System.out.print(arrayNo[i]+" ");
         }
         System.out.println();
-        /* 
         //Checking ascending order
         int i=0;
          while(i<n-1){
@@ -381,6 +380,7 @@ public class Functions{
         if(isAsc== true){
             System.out.println("Array is in ascending order");
         }
+    }
         
         //Alternate method
          
@@ -462,6 +462,5 @@ public class Functions{
         System.out.println("Greatest no. in the array: "+max);
         System.out.println("Smallest no. in the array: "+min);
     }
-    */
 }
 
