@@ -5,4 +5,4 @@ Started learning Java as a Programming Language. So will be posting and practici
 Currently, I am going through the basics. Introduction to java, input/output, variables, datatypes. Further moving on to the conditional statements, then to loops. And then solving some parttern questions. Furthermore, getting to learn about functions and methods. After successfully completing the basics now getting into some exercises..
 
 After a while, stepping into a new module of time and space complexity.
-Now moving to an important topic of Arrays, further to 2D Array.
+Now moving to important topics of Arrays, 2D Arrays and Strings..
